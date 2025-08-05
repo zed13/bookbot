@@ -13,3 +13,15 @@ def get_num_chars(filepath):
              stats[norm_char] = 0
            stats[norm_char] += 1
     return stats
+
+def get_chars_stat(num_chars):
+    list = []
+    for key in num_chars:
+        list.append({
+            "char": key,
+            "num": num_chars[key]
+        })
+    def sort_on(items):
+        return items["num"]
+    list.sort(reverse=True, key=sort_on)
+    return list
