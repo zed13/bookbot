@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from stats import get_chars_stat, get_num_words
 from stats import get_num_chars
 import sys
